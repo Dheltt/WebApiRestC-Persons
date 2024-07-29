@@ -22,7 +22,7 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI(c =>
-    {
+    {   //http://localhost:5184/index.html
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "My api v1");
         c.RoutePrefix = string.Empty;// abilita swagger ui para la url root
     });
